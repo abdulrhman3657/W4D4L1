@@ -50,11 +50,70 @@ p1.classList.add("p-style");
 let img1 = document.getElementsByTagName("img");
 img1[0].src = "https://www.logologo.com/logos/abstract-isometric-logo-design-free-logo.jpg"
 
-let list1 = document.querySelectorAll("li");
+let list1 = document.querySelector("ul");
 
-list1[0].innerText = "111";
-list1[1].innerText = "222";
-list1[2].innerText = "333";
-// list1[3].innerText = "444";
+list1.style.display = "flex";
 
-// console.log(list1)
+for (let i = 1; i <= 3; i++){
+    const li = document.createElement("li");
+    li.style.border = "1px solid black";
+    li.style.textDecoration = "underline"
+    list1.appendChild(li).textContent = `item ${i}`;
+}
+
+
+let table = document.createElement("table");
+let table_body = document.createElement("tbody");
+
+// let row = document.createElement("tr");
+// let cell = document.createElement("td");
+
+// let cellText = document.createTextNode("cell is row " + j + ", column " + i);
+
+
+// cell.appendChild(cellText);
+
+// row.appendChild(cell);
+
+// table_body.appendChild(row);
+
+// table.appendChild(table_body);
+
+// document.body.appendChild(table);
+
+
+for(let i = 1; i <= 2; i++){
+
+    let row = document.createElement("tr");
+
+    for(let j = 1; j <= 3; j++){
+
+        let cell = document.createElement("td");
+        let cellText = document.createTextNode(`row ${i} col${j}`);
+
+        cell.appendChild(cellText);
+        row.appendChild(cell);
+    }
+
+    table_body.appendChild(row);
+}
+
+table.appendChild(table_body);
+
+document.body.appendChild(table);
+
+// let row1 = table.insertRow(0);
+
+// let cell1 = row1.insertCell(0);
+// let cell2 = row1.insertCell(1);
+
+// let row2 = table.insertRow(0);
+
+// let cell12 = row1.insertCell(0);
+// let cell22 = row1.insertCell(1);
+
+// cell1.innerHTML = "CELL1";
+// cell2.innerHTML = "CELL2";
+
+
+

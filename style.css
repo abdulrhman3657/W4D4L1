@@ -2,3 +2,7 @@
     color: rgb(108, 180, 0);
     background-color: lightgray;
 }
+
+.tb-style{
+    border: 1px solid black;
+}
