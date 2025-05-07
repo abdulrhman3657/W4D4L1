@@ -100,20 +100,9 @@ for(let i = 1; i <= 2; i++){
 
 table.appendChild(table_body);
 
+table.classList.add("tb-style");
+
+
 document.body.appendChild(table);
-
-// let row1 = table.insertRow(0);
-
-// let cell1 = row1.insertCell(0);
-// let cell2 = row1.insertCell(1);
-
-// let row2 = table.insertRow(0);
-
-// let cell12 = row1.insertCell(0);
-// let cell22 = row1.insertCell(1);
-
-// cell1.innerHTML = "CELL1";
-// cell2.innerHTML = "CELL2";
-
 
 
